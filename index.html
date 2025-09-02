@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qi Liu's personal homepage</title>
+    <!-- 引入Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- 配置Tailwind自定义颜色和字体 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00C8BC',
+                        secondary: '#10B981',
+                        dark: '#1E293B',
+                        light: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- 自定义工具类 -->
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .transition-custom {
+                transition: all 0.3s ease;
+            }
+        }
+    </style>
+    <style>
+        /* 平滑滚动 */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* 导航栏滚动效果 */
+        .navbar-scrolled {
+            @apply bg-white/90 backdrop-blur-md shadow-md;
+        }
+        
+        /* 进度条动画 */
+        @keyframes progress {
+            from { width: 0; }
+        }
+        
+        .animate-progress {
+            animation: progress 1.5s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-light text-dark font-sans">
+    <!-- 导航栏 -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-primary">
+                    <span class="text-dark">Qi Liu</span> 刘琦
+                </a>
+                
+                <!-- 桌面导航 -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#News" class="hover:text-primary transition-custom">News</a>
+                    <a href="#Research and Projects" class="hover:text-primary transition-custom">Research and Projects</a>
+                    <a href="#Publications" class="hover:text-primary transition-custom">Publications</a>
+                </div>
+                
+                <!-- 移动端菜单按钮 -->
+                <button id="menu-toggle" class="md:hidden text-2xl">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            
+            <!-- 移动端导航菜单 -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#News" class="hover:text-primary transition-custom">News</a>
+                    <a href="#Research and Projects" class="hover:text-primary transition-custom">Research and Projects</a>
+                    <a href="#Publications" class="hover:text-primary transition-custom">Publications</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <header class="pt-20 pb-3 md:pt-20 md:pb-3 bg-gradient-to-br from-blue-50 to-green-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-3/6 mb-10 md:mb-0">
+                    <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold leading-tight text-shadow mb-4">
+                        Hello, I'm<span class="text-primary"> Qi Liu</span>
+                    </h1>
+                    <p class="text-[clamp(1.1rem,2vw,1.3rem)] mb-8">
+                        I am currently pursuing a master's degree at South China University of Technology, with research interests including thermal error compensation for precision CNC machine tools, time series prediction, transfer neural networks, and particle damping vibration reduction.
+                    </p>
+                    <div class="flex flex-wrap gap-4 items-center">
+	        <a href="#News" class="bg-white hover:bg-gray-100 text-primary px-6 py-3 rounded-lg transition-custom border border-gray-200 shadow-md hover:shadow-lg">
+                            News
+                        </a>
+                        <a href="#Research and Projects" class="bg-white hover:bg-gray-100 text-primary px-6 py-3 rounded-lg transition-custom border border-gray-200 shadow-md hover:shadow-lg">
+                            Research and Projects
+                        </a>
+                        <a href="#Publications" class="bg-white hover:bg-gray-100 text-primary px-6 py-3 rounded-lg transition-custom border border-gray-200 shadow-md hover:shadow-lg">
+                            Publications
+                        </a>
+                    </div>
+                </div>
+	<div class="md:w-3/10 space-y-6">
+	            <div class="flex items-start">
+                                <div class="bg-primary/10 p-3 rounded-full mr-4">
+                                    <i class="fa fa-graduation-cap"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Google Scholar</h4>
+                                    <!--a href="https://qiliu0701.github.io" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">qiliu0701.github.io</a-->
+                                </div>
+                            </div>
+	            <div class="flex items-start">
+                                <div class="bg-primary/10 p-3 rounded-full mr-4">
+                                    <i class="fa fa-github"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Github</h4>
+                                    <a href="https://qiliu0701.github.io" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">qiliu0701.github.io</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-primary/10 p-3 rounded-full mr-4">
+                                    <i class="fa fa-linkedin"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">LinkedIn</h4>
+		    <a href="http://www.linkedin.com/in/qi-liu-scut" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">http://www.linkedin.com/in/qi-liu-scut</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-primary/10 p-3 rounded-full mr-4">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Mail</h4>
+		    <a href="mailto:qiliu0701@gmail.com" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">qiliu0701@gmail.com</a>
+                                </div>
+                            </div>
+	</div>
+	<div class="md:w-1/5 flex justify-center">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-full blur-xl opacity-20"></div>
+                        <img src="me.jpg" alt="my photo" class="w-64 h-120 md:w-140 md:h-140 object-cover border-4 border-white shadow-xl relative z-10">
+	    </div>
+                 </div>
+            </div>
+         </div>
+    </header>
+
+    <!-- News -->
+    <section id="News" class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold mb-4">News</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-bold mb-4">no information</h3>
+                    <!--p class="text-gray-600 mb-6 leading-relaxed">
+                        20--/--/--
+                    </p-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- research项目 -->
+    <section id="Research and Projects" class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold mb-4">Research and Projects</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Here are some projects that I have participated in developing. Each project reflects my technical capabilities and problem-solving approaches.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 项目1 -->
+                <!--div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-custom group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://picsum.photos/id/3/600/400" alt="电子商务网站" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <a href="#" class="bg-white text-primary px-4 py-2 rounded-lg font-medium">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">电子商务网站</h3>
+                        <p class="text-gray-600 mb-4 text-sm">
+                            一个完整的电子商务平台，包含商品展示、购物车、支付和订单管理等功能。
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">React</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Redux</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Node.js</span>
+                        </div>
+                    </div>
+                </div-->
+                
+
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center bg-white border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg transition-custom">
+                    View more research and projects <i class="fa fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 出版物 -->
+    <section id="Publications" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold mb-4">Publications</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center bg-white border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg transition-custom">
+                    View more publications <i class="fa fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container mx-auto px-4 md:px-3"> 
+            <div class="border-t border-gray-800 mt-3 pt-3 text-center text-gray-400">
+                <p>Qi Liu's personal homepage, Last modified on September 2, 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // 导航栏滚动效果
+        const navbar = document.getElementById('navbar');
+        const backToTop = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+                navbar.classList.add('navbar-scrolled');
+                backToTop.classList.remove('opacity-0', 'invisible');
+                backToTop.classList.add('opacity-100', 'visible');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+                backToTop.classList.add('opacity-0', 'invisible');
+                backToTop.classList.remove('opacity-100', 'visible');
+            }
+        });
+        
+        // 移动端菜单切换
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuToggle.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // 点击导航链接关闭移动菜单
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+        
+        // 返回顶部功能
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // 技能条动画
+        const observerOptions = {
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-progress');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.animate-progress').forEach(progressBar => {
+            observer.observe(progressBar);
+        });
+    </script>
+</body>
+</html>
