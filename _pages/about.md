@@ -3,7 +3,7 @@ permalink: /
 title: "About Me"
 author_profile: true
 redirect_from: 
-  - /publication_main/
+  - /publications_main/
   - /about.html
 ---
 
