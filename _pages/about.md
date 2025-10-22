@@ -32,6 +32,7 @@ redirect_from:
   - /publication/
   - /about.html
 ---
+
 Publication
 ======
 ---
