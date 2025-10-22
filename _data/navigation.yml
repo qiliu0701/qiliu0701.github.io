@@ -19,7 +19,7 @@ main:
     url: /News/    
 
   - title: "Publications"
-    url: /publications_main/
+    url: /Publications/
 
   - title: "Projects and Research"
     url: /Projects and Research/
