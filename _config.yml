@@ -12,10 +12,10 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Homepage"
 title_separator          : "-"
 name                     : &name "Qi liu"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Qi's Homepage"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://qiliu0701.github.io/ # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+baseurl                  :  # the subpath of your site, e.g. "/blog"
 repository               : "https://qiliu0701.github.io/"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -26,7 +26,7 @@ author:
   avatar           : "me.jpg"
   name             : "Qi Liu"
   pronouns         : # example: "she/her"  
-  bio              : ""
+  bio              : 
   location         : "Guangzhou, China"
   employer         : "South China University of Technology"
   uri              : # URL
@@ -35,12 +35,12 @@ author:
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : ""
+  googlescholar    : 
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : ""
+  orcid            : 
   semantic         : # URL
-  pubmed           : ""
+  pubmed           : 
   researchgate     : # URL
   scopus           : # URL
 
@@ -48,13 +48,13 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "qiliu0701"
+  github           : 
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
   artstation       : # Username
-  bluesky          : "" # Replace this with you Bluesky username
+  bluesky          :  # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
