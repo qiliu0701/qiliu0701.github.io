@@ -25,12 +25,10 @@ Qi passed the mid-term review of his master's thesis.
 Qi began his master's studies at South China University of Technology and conducted research on the topic of thermal error compensation for machine tools.
 
 ---
-permalink: /
-title: "Publication"
+layout: archive
+title: "Publications"
+permalink: /publications/
 author_profile: true
-redirect_from: 
-  - /publication/
-  - /about.html
 ---
 
 Publication
