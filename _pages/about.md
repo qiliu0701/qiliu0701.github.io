@@ -6,6 +6,8 @@ redirect_from:
   - /about.html
 ---
 
+About Me
+======
 **I** am currently pursuing a master's degree at [South China University of Technology](https://www.scut.edu.cn/) and will graduate in **July 2026**. Before that, I obtained a bachelor's degree in mechanical engineering from [East China University of Technology](https://www.ecust.edu.cn/).
 
 Research Interests
