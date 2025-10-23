@@ -1,6 +1,6 @@
 ---
 permalink: /non-menu-page/
-title: "Projects and Research"
+title: "Research and Projects"
 author_profile: true
 redirect_from: 
   - "/rp/"
