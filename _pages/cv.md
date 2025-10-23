@@ -11,8 +11,8 @@ redirect_from:
 
 Education
 ======
-* M.S. in Mechanical Engineering, GitHub University, 2014
-* B.S. in Mechanical Engineering, GitHub University, 2012
+* M.S. in Mechanical Engineering, [South China University of Technology](https://www.scut.edu.cn/), 2026.7
+* B.S. in Mechanical Engineering, [East China University of Technology](https://www.ecust.edu.cn/), 2023.6
 
 Work experience
 ======
@@ -21,7 +21,7 @@ Work experience
   * Duties includes: Updates and improvements to template
   * Supervisor: The Users
 
-* Fall 2015: Research Assistant
+* Fall 2015: Intern
   * GitHub University
   * Duties included: Merging pull requests
   * Supervisor: Professor Hub
