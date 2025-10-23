@@ -6,13 +6,19 @@
 
 <div itemscope itemtype="http://schema.org/Person">
 
-  <div class="author__avatar">
+  <!--div class="author__avatar">
     {% if author.avatar contains "://" %}
     	<img src="{{ author.avatar }}" alt="{{ author.name }}"  fetchpriority="high" />
     {% else %}
     	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}"  fetchpriority="high" />
     {% endif %}
-  </div>
+</div-->
+  <div class="rounded overflow-hidden bg-gray-100 flex items-center justify-center">
+                        <!-- 替换为您的照片 -->
+                        <img src="images//me.jpg" class="w-full h-full object-cover">
+                        <!-- 如果没有照片，可以使用以下占位内容 -->
+                        <!-- <i class="fa fa-user text-6xl text-gray-300"></i> -->
+                    </div>
 
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
