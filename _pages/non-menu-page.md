@@ -1,5 +1,5 @@
 ---
-permalink: /rp/
+permalink: /non-menu-page/
 title: "Research and Projects"
 author_profile: true
 redirect_from: 
@@ -7,11 +7,9 @@ redirect_from:
   - "/nmp.html"
 ---
 
-Projects and Research
-======
-* 2023.8-2026.7   
-Research on Machining Tool Thermal Error Compensation
-* 2024.8-2026.7  
+* South China University of Technology - Research on Thermal Error Compensation of Machine Tools
+* Hitachi - Braking Noise Control for Elevator Drives
+* East China University of Technology - Research on Structural Health Monitoring Technology Based on Electrical Impedance Imaging
 
 
 
