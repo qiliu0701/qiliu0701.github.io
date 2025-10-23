@@ -24,9 +24,11 @@ News
 
 Publication
 ======
-<ul>{% for post in site.publications reversed %}
+<ul>
+  {% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}
+</ul>
 
 Projects & Research
 ======
