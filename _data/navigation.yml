@@ -10,13 +10,7 @@
 main:
 
   # - title: "About Me"
-  #   url: /About Me/
-
-  # - title: "Research Interests"
-  #   url: /Research Interests/
-    
-  # - title: "News"
-  #   url: /News/    
+  #   url: /About Me/ 
 
   - title: "Publications"
     url: /publications/
