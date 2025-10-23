@@ -21,5 +21,5 @@ Research Interests
 
 News
 ======
-**2025-10-10** Qi passed the mid-term review of his master's thesis  
-**2023-08-31** Qi began his master's studies at South China University of Technology and conducted research on the topic of thermal error compensation for machine tools.
+**2025-10-10**   Qi passed the mid-term review of his master's thesis  
+**2023-08-31**   Qi began his master's studies at South China University of Technology and conducted research on the topic of thermal error compensation for machine tools.
