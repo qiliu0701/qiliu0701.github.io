@@ -1,5 +1,5 @@
 ---
-permalink: /non-menu-page/
+permalink: /rp/
 title: "Research and Projects"
 author_profile: true
 redirect_from: 
