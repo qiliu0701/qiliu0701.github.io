@@ -25,6 +25,4 @@ Qi began his master's studies at South China University of Technology and conduc
 
 Publications
 ======
-{% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
+{% for post in site.publications reversed %} {% include archive-single-cv.html %} {% endfor %}
