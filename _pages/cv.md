@@ -16,12 +16,12 @@ Education
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Summer 2023: Research Assistant
+  * South China University of Technology
+  * Duties includes: Research on Thermal Error Compensation of Machine Tools
+  * Supervisor: [Zhong Chen](https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&hl=zh-CN&user=w7uswTQAAAAJ)
 
-* Fall 2015: Intern
+* Fall 2024: Intern
   * GitHub University
   * Duties included: Merging pull requests
   * Supervisor: Professor Hub
@@ -33,12 +33,12 @@ Work experience
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Research
+* Programming
+* Deep Learing
+* Finite Element Analysis, FEA
+* Digital Twin
+* Edge Computing
 
 Publications
 ======
