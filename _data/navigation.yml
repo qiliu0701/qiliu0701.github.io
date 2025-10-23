@@ -9,14 +9,14 @@
 
 main:
 
-  - title: "About Me"
-    url: /About Me/
+  # - title: "About Me"
+  #   url: /About Me/
 
-  - title: "Research Interests"
-    url: /Research Interests/
+  # - title: "Research Interests"
+  #   url: /Research Interests/
     
-  - title: "News"
-    url: /News/    
+  # - title: "News"
+  #   url: /News/    
 
   - title: "Publications"
     url: /publications/
