@@ -16,20 +16,15 @@ Education
 
 Work experience
 ======
-* Summer 2023: Research Assistant
+* 2023.8-2026.6: Research Assistant
   * South China University of Technology
-  * Duties includes: Research on Thermal Error Compensation of Machine Tools
+  * Guangdong Provincial Key Laboratory of Precision Equipment and Manufacturing Technology (PEMT)
   * Supervisor: [Zhong Chen](https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&hl=zh-CN&user=w7uswTQAAAAJ)
 
-* Fall 2024: Intern
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2024.9-2026.3: Intern
+  * Jiesida Intelligent Technology (Guangdong) Co., Ltd.
+  * Duties included: research and development
+  * Supervisor: Qisen Wu
   
 Skills
 ======
@@ -46,18 +41,8 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+Research and Projects
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
+  <ul>{% for rp in site.rp reversed %}
+    {% include non-menu-page.html  %}
   {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
