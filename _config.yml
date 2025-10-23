@@ -224,6 +224,9 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
+  rp:
+    output: true
+    permalink: /:collection/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
@@ -245,6 +248,15 @@ defaults:
       comments: true
       share: true
       related: true
+  # _rp
+  - scope:
+      path: ""
+      type: rp
+    values:
+      layout: single
+      author_profile: true
+      comments: true
+      share: true
   # _pages
   - scope:
       path: ""
