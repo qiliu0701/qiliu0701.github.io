@@ -9,4 +9,9 @@ redirect_from:
 
 Projects and Research
 ======
+* 2023.8-2026.7   
+Research on Machining Tool Thermal Error Compensation
+* 2024.8-2026.7  
+
+
 
