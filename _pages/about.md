@@ -11,10 +11,9 @@ redirect_from:
 Research Interests
 ======
 **Thermal error compensation for precision CNC machine tools**  
-**Time series prediction based on deep learning**  
-**Transfer learning**  
-**Digital Twin**  
-**Particle damping vibration reduction**  
+**Deep learning**  
+**FEA & Digital Twin**  
+**Vibration reduction**  
 
 News
 ======
