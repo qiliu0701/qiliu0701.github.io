@@ -17,13 +17,14 @@
     <li>
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
-        <img src=
+        <!--img src=
           {% if teaser contains "://" %}
             "{{ teaser }}"
           {% else %}
             "{{ teaser | prepend: "/images/" | prepend: base_path }}"
           {% endif %}
-          alt="">
+          alt=""-->
+        <img src="{{ teaser }}" alt="">
       </div>
     {% endif %}
     <h3 class="archive__item-title" itemprop="headline">
