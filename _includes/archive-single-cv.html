@@ -11,13 +11,13 @@
 {% else %}
   {% assign title = post.title %}
 {% endif %}
-<div class="rounded overflow-hidden bg-gray-100 flex items-center justify-center">
-  <img src="../images/me.jpg">
-</div>
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     <li>
+      <div class="rounded overflow-hidden bg-gray-100 flex items-center justify-center">
+        <img src={{ post.teaser }}  style="width: 75%; height: auto;">
+      </div>
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
