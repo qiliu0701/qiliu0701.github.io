@@ -11,9 +11,9 @@
 {% else %}
   {% assign title = post.title %}
 {% endif %}
-
+<div class="flex items-start gap-6 p-4 border border-gray-200 rounded-lg">
+  <img src="{{ post.teaser }}"  style="width: 33%; height: auto;">
 <div class="{{ include.type | default: "list" }}__item flex">
-<img src="{{ post.teaser }}"  style="width: 75%; height: auto;">
   <article class="archive__item flex" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
@@ -38,4 +38,5 @@
         {% endif %}
         {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %}
  </article>
+</div>
 </div>

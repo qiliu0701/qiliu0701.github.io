@@ -11,14 +11,14 @@
 {% else %}
   {% assign title = post.title %}
 {% endif %}
-
+<div class="flex items-start gap-6 p-4 border border-gray-200 rounded-lg">
+<img src="{{ post.teaser }}"  style="width: 33%; height: auto;">
 <div class="{{ include.type | default: "list" }}__item flex">
-<div class="w-1/3 h-auto">
-<img src="{{ post.teaser }}"  style="width: 75%; height: auto;"></div>
   <article class="archive__item flex" itemscope itemtype="http://schema.org/CreativeWork">
               <h3 class="archive__item-title flex" itemprop="headline">
                 <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
               </h3>
                 <p class="archive__item-excerpt" itemprop="description">{{ post.institute }}</p>
  </article>
+</div>
 </div>
