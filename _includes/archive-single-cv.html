@@ -14,7 +14,6 @@
 
 <div class="{{ include.type | default: "list" }}__item flex">
   <article class="archive__item flex" itemscope itemtype="http://schema.org/CreativeWork">
-    <li>
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -38,6 +37,5 @@
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
     {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %}
-    </li>
  </article>
 </div>
