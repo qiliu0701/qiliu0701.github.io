@@ -13,17 +13,11 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item flex">
+<img src="{{ post.teaser }}"  class="w-full h-auto rounded">
   <article class="archive__item flex" itemscope itemtype="http://schema.org/CreativeWork">
-      <div class="flex items-start gap-6 p-4 border border-gray-200 rounded-lg">
-            <div class="w-32 h-auto">
-            <img src="{{ post.teaser }}"  style="width: 55%; height: auto;">
-            </div>
-          <div class="flex-1">
               <h3 class="archive__item-title flex" itemprop="headline">
                 <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
               </h3>
                 <p class="archive__item-excerpt" itemprop="description">{{ post.institute }}</p>
-          </div>
-      </div>
  </article>
 </div>
