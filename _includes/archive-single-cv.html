@@ -15,9 +15,6 @@
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     <li>
-      <div class="rounded overflow-hidden bg-gray-100 flex items-center justify-center">
-        <img src="{{ post.teaser }}"  style="width: 75%; height: auto;">
-      </div>
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -29,7 +26,10 @@
           alt="">
       </div>
     {% endif %}
-    <h3 class="archive__item-title" itemprop="headline">
+    <div class="rounded overflow-hidden bg-gray-100 flex items-center justify-center">
+        <img src="{{ post.teaser }}"  style="width: 75%; height: auto;">
+    </div>
+      <h3 class="archive__item-title" itemprop="headline">
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
