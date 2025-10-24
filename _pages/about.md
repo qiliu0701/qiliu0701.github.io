@@ -28,6 +28,5 @@ Publications
 
 Research and Projects
 ======
-* Hitachi - **Braking Noise Control for Elevator Drives**
 
 {% for post in site.rp reversed %} {% include rp.html %} {% endfor %}
