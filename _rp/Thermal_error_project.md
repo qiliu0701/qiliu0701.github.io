@@ -5,7 +5,7 @@ category: manuscripts
 permalink: /rp/Thermal_error_project
 excerpt: ''
 date: 2025-10-1
-teaser: '../images/project-thermal-error'
+teaser: '../images/project-thermal-error.jpg'
 venue: 'Journal of Intelligent Manufacturing'
 slidesurl: https://academicpages.github.io/files/paper3.pdf
 paperurl: https://academicpages.github.io/files/paper3.pdf
