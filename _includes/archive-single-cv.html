@@ -13,7 +13,7 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item flex">
-<img src="{{ post.teaser }}"  class="w-32 h-auto rounded">
+<img src="{{ post.teaser }}"  class="w-4 h-auto rounded">
   <article class="archive__item flex" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
