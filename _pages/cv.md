@@ -42,6 +42,4 @@ Publications
   
 Research and Projects
 ======
-* South China University of Technology - **Research on Thermal Error Compensation of Machine Tools**
-* Hitachi - **Braking Noise Control for Elevator Drives**
-* East China University of Technology - **Research on Structural Health Monitoring Technology Based on Electrical Impedance Imaging**
+{% for post in site.rp reversed %} {% include rp.html %} {% endfor %}
