@@ -1,9 +1,13 @@
 {% include base_path %}
+
+<div class="flex">
+<img src="{{ post.teaser }}"  style="width: 45%; height: auto;">
 <div class="{{ include.type | default: "list" }}__item flex">
-<article class="archive__item flex" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item flex" itemscope itemtype="http://schema.org/CreativeWork">
               <h3 class="archive__item-title flex" itemprop="headline">
-                <p>{{ post.time }}</p>
-                  <p class="archive__item-excerpt" itemprop="description">{{ post.disc}}</p>
+                <a >{{ post.time }}</a>
               </h3>
-</article>
+                <p class="archive__item-excerpt" itemprop="description">{{ post.disc }}</p>
+ </article>
+</div>
 </div>
