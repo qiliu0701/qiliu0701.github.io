@@ -12,7 +12,6 @@
   {% assign title = post.title %}
 {% endif %}
 <div class="flex">
-  <img src="{{ post.teaser }}"  style="width: 45%; height: auto;">
 <div class="{{ include.type | default: "list" }}__item flex">
   <article class="archive__item flex" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
@@ -36,6 +35,7 @@
         {% if post.read_time %}
           <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
         {% endif %}
+      <img src="{{ post.teaser }}"  style="width: 45%; height: auto;">
         {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %}
  </article>
 </div>
