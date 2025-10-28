@@ -227,6 +227,9 @@ collections:
   rp:
     output: true
     permalink: /:collection/:path/
+  news:
+    output: true
+    permalink: /:collection/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
@@ -253,6 +256,15 @@ defaults:
       path: ""
       type: rp
     values:
+      layout: single
+      author_profile: true
+      comments: true
+      share: true
+  # _news
+  - scope:
+      path: ""
+      type: news
+      values:
       layout: single
       author_profile: true
       comments: true
