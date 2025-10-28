@@ -40,4 +40,4 @@ Publications
   
 Research and Projects
 ======
-{% for post in site.rp reversed %} {% include rp.html %} {% endfor %}
+{% for post in site.rp reversed %} {% include rp_cv.html %} {% endfor %}

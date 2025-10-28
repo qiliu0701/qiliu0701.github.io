@@ -1,0 +1,23 @@
+{% include base_path %}
+
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+<div class="flex">
+<div class="{{ include.type | default: "list" }}__item flex">
+  <article class="archive__item flex" itemscope itemtype="http://schema.org/CreativeWork">
+              <h3 class="archive__item-title flex" itemprop="headline">
+                <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+              </h3>
+                <p class="archive__item-excerpt" itemprop="description">{{ post.institute }}</p>
+ </article>
+</div>
+</div>
