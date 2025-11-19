@@ -18,7 +18,7 @@ Research Interests
 News
 ======
 
-[//]: # ({% for post in site.news reversed %} {% include news.html %} {% endfor %})
+{% for post in site.news reversed %} {% include news.html %} {% endfor %}
 
 Publications
 ======
