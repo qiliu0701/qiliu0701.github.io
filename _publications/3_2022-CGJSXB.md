@@ -1,5 +1,5 @@
 ---
-title: "Flexible Electrical Impedance Imaging Sensor Based on Laser Direct Writing"
+title: "Flexible Electrical Impedance Imaging Sensor Based on Laser Direct Writing (published)"
 collection: publications
 category: manuscripts
 permalink: /publication/2022-CGJSXB
