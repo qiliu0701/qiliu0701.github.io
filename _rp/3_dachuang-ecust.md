@@ -4,7 +4,7 @@ collection: rp
 category: manuscripts
 permalink: /rp/dachuang-ecust
 excerpt: ''
-date: 2025-10-1
+date: 2021-9-1
 teaser: '../images/project-dachuang.jpg'
 venue: 'Journal of Intelligent Manufacturing'
 slidesurl: https://academicpages.github.io/files/paper3.pdf
