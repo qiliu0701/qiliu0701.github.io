@@ -31,7 +31,8 @@
         {% else %}
 <!--          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>-->
             <a href="{{post.pdf}}" rel="permalink" target="_blank">{{ title }}</a>
-            <p>Click to view the full text</p>
+            <a href="{{post.pdf}}" rel="permalink" target="_blank">Click to view the full text</a>
+<!--            <p>Click to view the full text</p>-->
         {% endif %}
         </h3>
         {% if post.read_time %}
