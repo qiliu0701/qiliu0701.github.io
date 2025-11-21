@@ -31,7 +31,6 @@
         {% else %}
 <!--          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>-->
             <a href="{{post.pdf}}" rel="permalink" target="_blank">{{ title }}</a>
-            <br>
             <a href="{{post.pdf}}" rel="permalink" target="_blank">Click to view the full text</a>
 <!--            <p>Click to view the full text</p>-->
         {% endif %}
@@ -39,6 +38,7 @@
         {% if post.read_time %}
           <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
         {% endif %}
+      <p><a href="{{post.pdf}}" rel="permalink" target="_blank">Click to view the full text</a></p>
         {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %}
  </article>
 </div>
